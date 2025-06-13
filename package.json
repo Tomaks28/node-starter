@@ -7,7 +7,8 @@
     "build": "tsc",
     "start": "NODE_ENV=production node dist/index.js",
     "dev": "NODE_ENV=dev tsx src/index.ts",
-    "ts:check": "NODE_ENV=dev tsc --noEmit"
+    "ts:check": "NODE_ENV=dev tsc --noEmit",
+    "lint": "eslint . --ext .js,.ts --fix"
   },
   "_moduleAliases": {
     "@": "dist"
@@ -17,10 +18,15 @@
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
+    "@eslint/js": "^9.28.0",
     "@types/module-alias": "^2.0.4",
     "@types/node": "^24.0.1",
+    "eslint": "^9.28.0",
+    "eslint-plugin-import": "^2.31.0",
+    "globals": "^16.2.0",
     "module-alias": "^2.2.3",
     "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.0"
   }
 }
