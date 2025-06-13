@@ -41,6 +41,17 @@ export default defineConfig([
             "Using console.log is discouraged. Please remove it before committing.",
         },
       ],
+
+      // ✅ Remplace no-unused-vars par la version TS
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+        },
+      ],
     },
   },
   {
