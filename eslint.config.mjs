@@ -30,6 +30,17 @@ export default defineConfig([
           "newlines-between": "always",
         },
       ],
+
+      // ⚠️ Avertir sur console.log
+      "no-restricted-syntax": [
+        "error",
+        {
+          selector:
+            'CallExpression[callee.object.name="console"][callee.property.name="log"]',
+          message:
+            "Using console.log is discouraged. Please remove it before committing.",
+        },
+      ],
     },
   },
   {
