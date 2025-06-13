@@ -14,6 +14,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
+    "module-alias": "^2.2.3",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
