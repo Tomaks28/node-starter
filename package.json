@@ -2,12 +2,25 @@
   "name": "node-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "NODE_ENV=production node dist/index.js",
+    "dev": "NODE_ENV=dev tsx src/index.ts",
+    "ts:check": "NODE_ENV=dev tsc --noEmit"
+  },
+  "_moduleAliases": {
+    "@": "dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.12.1"
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^24.0.1",
+    "module-alias": "^2.2.3",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
 }
