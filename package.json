@@ -9,6 +9,9 @@
     "dev": "tsx src/index.ts",
     "ts:check": "tsc --noEmit"
   },
+  "_moduleAliases": {
+    "@": "dist"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
