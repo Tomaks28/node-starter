@@ -17,8 +17,11 @@
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
+    "@eslint/js": "^9.28.0",
     "@types/module-alias": "^2.0.4",
     "@types/node": "^24.0.1",
+    "eslint": "^9.28.0",
+    "globals": "^16.2.0",
     "module-alias": "^2.2.3",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
