@@ -8,6 +8,12 @@ importers:
 
   .:
     devDependencies:
+      '@types/module-alias':
+        specifier: ^2.0.4
+        version: 2.0.4
+      '@types/node':
+        specifier: ^24.0.1
+        version: 24.0.1
       module-alias:
         specifier: ^2.2.3
         version: 2.2.3
@@ -170,6 +176,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@types/module-alias@2.0.4':
+    resolution: {integrity: sha512-5+G/QXO/DvHZw60FjvbDzO4JmlD/nG5m2/vVGt25VN1eeP3w2bCoks1Wa7VuptMPM1TxJdx6RjO70N9Fw0nZPA==}
+
+  '@types/node@24.0.1':
+    resolution: {integrity: sha512-MX4Zioh39chHlDJbKmEgydJDS3tspMP/lnQC67G3SWsTnb9NeYVWOjkxpOSy4oMfPs4StcWHwBrvUb4ybfnuaw==}
+
   esbuild@0.25.5:
     resolution: {integrity: sha512-P8OtKZRv/5J5hhz0cUAdu/cLuPIKXpQl1R9pZtvmHWQvrAUVd0UNIPT4IB4W3rNOqVO0rlqHmCIbSwxh/c9yUQ==}
     engines: {node: '>=18'}
@@ -198,6 +210,9 @@ packages:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  undici-types@7.8.0:
+    resolution: {integrity: sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw==}
 
 snapshots:
 
@@ -276,6 +291,12 @@ snapshots:
   '@esbuild/win32-x64@0.25.5':
     optional: true
 
+  '@types/module-alias@2.0.4': {}
+
+  '@types/node@24.0.1':
+    dependencies:
+      undici-types: 7.8.0
+
   esbuild@0.25.5:
     optionalDependencies:
       '@esbuild/aix-ppc64': 0.25.5
@@ -323,3 +344,5 @@ snapshots:
       fsevents: 2.3.3
 
   typescript@5.8.3: {}
+
+  undici-types@7.8.0: {}
