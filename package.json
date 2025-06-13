@@ -8,7 +8,8 @@
     "start": "NODE_ENV=production node dist/index.js",
     "dev": "NODE_ENV=dev tsx src/index.ts",
     "ts:check": "NODE_ENV=dev tsc --noEmit",
-    "lint": "eslint . --ext .js,.ts --fix"
+    "lint": "eslint . --ext .js,.ts --fix",
+    "test": "NODE_ENV=test jest --passWithNoTests"
   },
   "_moduleAliases": {
     "@": "dist"
