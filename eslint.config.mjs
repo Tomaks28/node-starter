@@ -1,14 +1,18 @@
 import js from "@eslint/js";
 import { defineConfig } from "eslint/config";
+import eslintConfigPrettier from "eslint-config-prettier";
 import eslintPluginImport from "eslint-plugin-import";
+import eslintPluginPrettier from "eslint-plugin-prettier";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
+/** @type {import("eslint").Linter.Config[]} */
 export default defineConfig([
   {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
     plugins: {
       js,
+      prettier: eslintPluginPrettier,
       import: eslintPluginImport,
     },
     extends: ["js/recommended"],
@@ -59,4 +63,5 @@ export default defineConfig([
     languageOptions: { globals: globals.node },
   },
   tseslint.configs.recommended,
+  eslintConfigPrettier,
 ]);
